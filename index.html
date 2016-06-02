@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS Directives</title>
+    <script src="./angular.min.js"></script>
+
+</head>
+<body>
+
+<div data-ng-controller="NameCtrl">
+    <h1>from ctrl : </h1>
+    <input type="text" data-ng-model="name"/>
+    <u>{{name}}</u>
+    <hr/>
+
+    <div data-ng-table-1 data-records="names"></div>
+</div>
+
+<br>
+
+<div data-ng-controller="ProductsCtrl">
+    <h1>from ctrl : </h1>
+    <input type="text" data-ng-model="name"/>
+    <u>{{name}}</u>
+    <hr/>
+
+    <div data-ng-table-2 data-records="products"></div>
+</div>
+
+<script src="ngTable.directive.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
